@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #1f1f1f;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #fff000;
+}  
+
+.content  {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      justify-items: center;
+      align-items: center;
+      grid-gap: 20px;
+}
+.conic {
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(gold,black,gold);
+    border-radius: 50%;
+}
+  
+.conic1 {
+    width: 200px;
+    height: 200px;
+    background: repeating-conic-gradient(red 0%,red 10%,yellow 10%, yellow 20%);
+    border-radius: 50%;
+}
+  
+.pacman {
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(yellow 0%, yellow 15%, transparent 15%, transparent 35%, yellow 35%);
+    border-radius: 50%;
+}
+
+.pyramid {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(#0063ff 37.5%, #7F6000 37.5%, #7F6000 43.5%, #ffc000 43.5%, #ffc000  61.5%, #0063ff 61.5%);
+}
+
+.pizza {
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(#dc540f,#dc540f 16.66%,transparent 16.66%,transparent 33.32%,#dc540f 33.32%, #dc540f 49.98%, #f36c0e 49.98%, #f36c0e 66.64%, #dc540f 66.64%, #dc540f  83.3%,#f36c0e 83.3%, #f36c0e 100%);
+    border-radius: 50%;
+    position: relative;
+}
+.pizza::after {
+    content:'';
+    display: block;
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(transparent,transparent 16.66%,#f36c0e 16.66%,#f36c0e 33.32%,transparent 33.32%, transparent 49.98%, transparent 49.98%, transparent 66.64%, transparent 66.64%, transparent  83.3%,transparent 83.3%, transparent 100%);
+    border-radius: 50%;
+    position: absolute;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+  
